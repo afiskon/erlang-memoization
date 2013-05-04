@@ -1,0 +1,14 @@
+{application, erlymemo,
+ [
+  {description, "Erlang Memoization Library"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { erlymemo_app, []}},
+  {env, [
+    { table_max_size, 10000 } % items 
+  ]}
+ ]}.
